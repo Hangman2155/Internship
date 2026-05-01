@@ -1,0 +1,58 @@
+# Git and GitHub Version Control Task
+
+This document covers the core concepts, workflows, and essential commands for using Git and GitHub in a collaborative development environment.
+
+---
+
+## 1. Introduction to Version Control
+Version control allows developers to track, manage, and revert changes to source code over time.
+* **Why it matters:** It prevents overwriting team members' work, allows experimentation via branches without breaking the main code, and acts as a single source of truth for the project.
+
+---
+
+## 2. Standard Branching & Collaboration Workflow
+
+In a professional setting, development follows a strict workflow:
+1. **Branching:** Creating a separate workspace to add features or fix bugs.
+2. **Committing:** Saving snapshots of code locally with descriptive messages.
+3. **Pull Requests (PR):** Proposing changes on GitHub for team review before merging.
+4. **Merging:** Integrating the tested feature branch back into the main codebase.
+
+### Hands-On Example Workflow
+
+To complete this task, run the following steps in your terminal or Git Bash:
+
+```bash
+# Step 1: Clone your GitHub repository locally
+git clone [https://github.com/YourUsername/YourRepoName.git](https://github.com/YourUsername/YourRepoName.git)
+cd YourRepoName
+
+# Step 2: Create and switch to a new branch for the task
+git checkout -b feature-git-task
+
+# Step 3: Create or modify a file (e.g., this README.md file)
+# (Add your changes to the file here)
+
+# Step 4: Check file status and stage your changes
+git status
+git add README.md
+
+# Step 5: Save your changes to your local Git history
+git commit -m "Add Git and GitHub task documentation"
+
+# Step 6: Push your feature branch to GitHub
+git push origin feature-git-task
+
+# Step 7: Finalize on GitHub
+# Go to GitHub.com, open a "Pull Request", and merge it into the main branch.
+git init	Initializes a new local Git repository.
+git clone <url>	Downloads an existing repository from GitHub to your local machine.
+git status	Shows which files are modified, staged, or untracked.
+git add <file>	Moves changes from the working directory to the staging area.
+git commit -m "msg"	Saves the staged changes into the local repository history.
+git branch	Lists all your local branches.
+git checkout -b <name>	Creates a new branch and switches to it.
+git checkout <name>	Switches to an existing branch.
+git merge <branch>	Combines changes from the specified branch into the current one.
+git push origin <branch>	Uploads local branch commits to GitHub.
+git pull origin <branch>	Downloads latest changes from GitHub and integrates them locally.
