@@ -1,0 +1,49 @@
+📁 Navigation & Directory Basics
+pwd – Print working directory (shows exactly where you are).
+
+ls – List directory contents.
+
+ls -l – Long listing format (shows permissions, owner, size, and modification date).
+
+ls -a – List all files, including hidden files (those starting with a .).
+
+cd [dir] – Change directory.
+
+cd .. – Move up one directory level.
+
+cd ~ – Move to the user's home directory.
+
+📄 File Creation & Viewing
+touch [file] – Create a new empty file or update the timestamp of an existing one.
+
+cat [file] – Concatenate and display the entire content of a file.
+
+less [file] – View file contents one page at a time (use arrow keys to navigate, q to quit).
+
+head -n [x] [file] – View the first x lines of a file.
+
+tail -n [x] [file] – View the last x lines of a file.
+
+tail -f [file] – Follow file changes in real-time (excellent for monitoring logs).
+
+🛠️ File & Directory Manipulation
+mkdir [dir] – Create a new directory.
+
+mkdir -p [path/to/dir] – Create parent directories as needed.
+
+cp [source] [dest] – Copy files.
+
+cp -r [source_dir] [dest_dir] – Copy directories recursively.
+
+mv [source] [dest] – Move or rename files and directories.
+
+rm [file] – Delete a file.
+
+rm -r [dir] – Delete a directory and all of its contents recursively and forcefully (rm -rf deletes without prompting).
+
+🔍 Searching & Finding
+find [path] -name [filename] – Search for files in a specific directory tree by name.
+
+grep "[pattern]" [file] – Search for a specific text pattern inside a file.
+
+grep -r "[pattern]" [dir] – Search for a pattern recursively through all files in a directory.
