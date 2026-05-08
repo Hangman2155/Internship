@@ -1,0 +1,23 @@
+# Dockerized Python Flask App
+
+## Project Overview
+This project demonstrates how to containerize a simple Python Flask application using Docker. It includes a basic web server that serves a "Hello World" message, showcasing environment isolation and easy deployment.
+
+## Files Included:
+1. app.py: The Flask application code.
+2. requirements.txt: Python dependencies (Flask).
+3. Dockerfile: The blueprint for building the Docker image.
+4. .dockerignore: Prevents unnecessary files from being added to the image.
+
+## Quick Start
+1. Build the image:
+   docker build -t flask-app .
+
+2. Run the container:
+   docker run -p 5000:5000 flask-app
+
+3. Access at:
+   http://localhost:5000
+
+---
+Created for learning containerization concepts.
